@@ -1,0 +1,71 @@
+COPY THIS INTO EXCEL (Tab-separated):
+========================================
+
+No.	Name	Title	Gross Salary	Working Days	Normal OT {1.5}	Night OT {1.75}	Sunday {2.00}	Holiday {2.5}	Performed Task
+1	ABC Construction Co.	Mason	18000	5	2	0	0	0	Brick laying foundation work
+2	XYZ Contractors Ltd	Carpenter	20000	6	3	1	0	0	Framework and formwork installation
+3	DEF Company Ltd	Electrician	22000	4	0	2	0	0	Main panel wiring and connections
+4	GHI Engineering	Plumber	19000	5	1	0	1	0	Pipe installation and fixtures
+5	JKL Corporation	Steel Fixer	21000	5	2	1	0	0	Rebar tying and placement
+6	MNO Contractors	Painter	17000	4	0	0	0	0	Interior wall painting
+7	PQR Services	Laborer	15000	10	4	0	0	0	General construction labor work
+8	STU Company	Welder	23000	5	1	2	0	0	Structural steel welding
+9	VWX Ltd	Foreman	25000	6	2	0	0	0	Site supervision and coordination
+10	YZ Contractors	Heavy Equipment Operator	24000	5	0	1	0	0	Excavator and crane operation
+
+
+INSTRUCTIONS:
+============
+
+1. SELECT ALL THE TEXT ABOVE (from "No." to the last row)
+2. COPY (Ctrl+C)
+3. OPEN EXCEL
+4. CLICK on cell A1
+5. PASTE (Ctrl+V)
+6. You now have an Excel template ready!
+
+7. EDIT the data as needed (change names, salaries, etc.)
+8. SELECT the DATA ROWS ONLY (from row 2 to last row, don't include header)
+9. COPY (Ctrl+C)
+10. GO TO DPR FORM in browser
+11. CLICK on "No." field
+12. PASTE (Ctrl+V)
+13. CLICK OK
+14. DONE! All fields filled automatically!
+
+
+COLUMN EXPLANATION:
+==================
+
+Column A - No.: Sequential number (1, 2, 3, ...)
+Column B - Name: Company or contractor name
+Column C - Title: Job title (Mason, Carpenter, Electrician, etc.)
+Column D - Gross Salary: Monthly salary in ETB
+Column E - Working Days: Number of days worked this period
+Column F - Normal OT {1.5}: Overtime hours at 1.5x rate
+Column G - Night OT {1.75}: Night overtime hours at 1.75x rate
+Column H - Sunday {2.00}: Sunday work hours at 2.0x rate
+Column I - Holiday {2.5}: Holiday work hours at 2.5x rate
+Column J - Performed Task: Description of work done (optional)
+
+
+IMPORTANT NOTES:
+===============
+
+- Use TAB to separate columns (Excel does this automatically when you paste)
+- Put 0 (zero) in OT columns if no overtime, don't leave empty
+- Working Days is typically 1-30 (days in the month)
+- Gross Salary is monthly salary, system auto-calculates hourly rate (÷30)
+- Performed Task is optional, can be left empty or filled manually later
+- Don't include the header row when pasting to DPR form
+
+
+QUICK TEST DATA (3 rows):
+=========================
+
+1	Test Company A	Mason	18000	5	2	0	0	0	Test work A
+2	Test Company B	Carpenter	20000	6	3	1	0	0	Test work B
+3	Test Company C	Electrician	22000	4	0	2	0	0	Test work C
+
+
+Copy the 3 rows above to quickly test the Smart Paste feature!

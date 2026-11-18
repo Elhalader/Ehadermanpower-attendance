@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test App.js Syntax</title>
+</head>
+<body>
+    <h1>Testing app.js</h1>
+    <div id="status">Loading...</div>
+    <script>
+        // Try to load app.js and report any syntax errors
+        const script = document.createElement('script');
+        script.src = 'app.js';
+        script.onerror = function() {
+            document.getElementById('status').innerHTML = '<span style="color:red">❌ ERROR: app.js failed to load!</span>';
+        };
+        script.onload = function() {
+            document.getElementById('status').innerHTML = '<span style="color:green">✅ SUCCESS: app.js loaded without syntax errors!</span><br><br>Functions found:<br>';
+            
+            // List some key functions
+            const functions = ['login', 'logout', 'saveReport', 'addRow', 'handleFieldPaste', 'processPastedData', 'calcManpowerTotals'];
+            functions.forEach(func => {
+                if (typeof window[func] === 'function') {
+                    document.getElementById('status').innerHTML += `✓ ${func}() exists<br>`;
+                } else {
+                    document.getElementById('status').innerHTML += `✗ ${func}() MISSING<br>`;
+                }
+            });
+        };
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>

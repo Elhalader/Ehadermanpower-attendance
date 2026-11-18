@@ -1,0 +1,126 @@
+SINGLE ROW TEST (Your Example):
+================================
+
+Copy this line and paste in "No." field:
+
+1	Abdi Debele	daily labor	500	3	20	4	0	0
+
+
+MULTIPLE ROWS TEST:
+===================
+
+Copy all 5 lines below and paste in "No." field:
+
+1	Abdi Debele	daily labor	500	3	20	4	0	0	General work
+2	Ahmed Ali	Mason	18000	5	2	0	0	0	Brick laying
+3	Fatuma Hassan	Carpenter	20000	6	3	1	0	0	Wood work
+4	Mohamed Yusuf	Electrician	22000	4	0	2	0	0	Wiring
+5	Sara Ibrahim	Plumber	19000	5	1	0	1	0	Pipe work
+
+
+MORE TEST DATA (10 rows):
+=========================
+
+1	ABC Construction	Mason	18000	5	2	0	0	0	Foundation work
+2	XYZ Contractors	Carpenter	20000	6	3	1	0	0	Framework
+3	DEF Company	Electrician	22000	4	0	2	0	0	Main panel wiring
+4	GHI Engineering	Plumber	19000	5	1	0	1	0	Pipe installation
+5	JKL Corporation	Steel Fixer	21000	5	2	1	0	0	Rebar work
+6	MNO Services	Painter	17000	4	0	0	0	0	Interior painting
+7	PQR Contractors	Laborer	15000	10	4	0	0	0	General labor
+8	STU Company	Welder	23000	5	1	2	0	0	Steel welding
+9	VWX Ltd	Foreman	25000	6	2	0	0	0	Site supervision
+10	YZ Engineering	Equipment Operator	24000	5	0	1	0	0	Crane operation
+
+
+INSTRUCTIONS:
+=============
+
+HOW TO TEST SINGLE ROW:
+1. Copy the first line (1 Abdi Debele daily labor 500 3 20 4 0 0)
+2. Open index.html in browser
+3. Login: Admin / admin@Elhader
+4. Click "New Report"
+5. Select a project
+6. Click "+ Add Trade"
+7. Click in "No." field
+8. Paste (Ctrl+V)
+9. All fields filled automatically! ✓
+
+HOW TO TEST MULTIPLE ROWS:
+1. Copy the 5 test lines (from line 1 to line 5)
+2. Open index.html in browser
+3. Login: Admin / admin@Elhader
+4. Click "New Report"
+5. Select a project
+6. Click in "No." field (don't add a row first)
+7. Paste (Ctrl+V)
+8. Click OK in confirmation dialog
+9. All 5 rows created and filled! ✓
+
+
+EXPECTED RESULTS:
+=================
+
+SINGLE ROW PASTE:
+✓ No. = 1
+✓ Name = Abdi Debele
+✓ Title = daily labor
+✓ Gross Salary = 500
+✓ Working Days = 3
+✓ Normal OT {1.5} = 20
+✓ Night OT {1.75} = 4
+✓ Sunday {2.00} = 0
+✓ Holiday {2.5} = 0
+✓ Hourly Rate = 16.67 (auto-calculated: 500 ÷ 30)
+✓ Normal Pay = 400.08 (auto-calculated: 3 × 8 × 16.67)
+✓ OT Pay = 1,849.37 (auto-calculated)
+✓ Total Pay = 2,249.45 (auto-calculated)
+
+MULTIPLE ROW PASTE (5 rows):
+✓ 5 rows created
+✓ All fields filled in each row
+✓ All calculations done automatically
+✓ Totals updated at bottom
+
+
+TROUBLESHOOTING:
+================
+
+PROBLEM: Fields not filling
+SOLUTION: Make sure you're copying from this text file or Excel with TAB separators
+
+PROBLEM: Wrong values in fields
+SOLUTION: Make sure column order matches (No., Name, Title, Gross Salary, Working Days, OT columns)
+
+PROBLEM: Only first field fills
+SOLUTION: Data must be tab-separated. Copy from this file or from Excel (not manually typed with spaces)
+
+PROBLEM: No confirmation dialog for multiple rows
+SOLUTION: Make sure you're pasting multiple lines (more than 1). Check for newlines between rows.
+
+
+COLUMN FORMAT REMINDER:
+=======================
+
+Column 1: No. (1, 2, 3, ...)
+Column 2: Name (Company/person name)
+Column 3: Title (Job title)
+Column 4: Gross Salary (Monthly salary in ETB)
+Column 5: Working Days (Number of days worked)
+Column 6: Normal OT {1.5} (OT hours at 1.5x rate)
+Column 7: Night OT {1.75} (OT hours at 1.75x rate)
+Column 8: Sunday {2.00} (OT hours at 2.0x rate)
+Column 9: Holiday {2.5} (OT hours at 2.5x rate)
+Column 10: Performed Task (Optional - work description)
+
+Columns must be TAB-separated (Excel does this automatically)
+
+
+QUICK REFERENCE:
+================
+
+SINGLE ROW: Copy 1 line → Paste in "No." → Fills current row instantly
+MULTIPLE ROWS: Copy many lines → Paste in "No." → Confirm dialog → All rows created
+
+Both work perfectly! ✓
